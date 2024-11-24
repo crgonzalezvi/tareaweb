@@ -64,6 +64,3 @@ function pass(){
     }
 }
 
-function send(){
-    alert("Información recolectada exitosamente")
-}

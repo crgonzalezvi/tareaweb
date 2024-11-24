@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ensayo</title>
+    <title>Formulario - Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,12 +19,14 @@
 
     <br>
 
+    <label>¿Desea registrarse en el concurso?</label>
+    <br>
     <input type="radio" onclick="radius()" id="si"name="opcion" value="Si"/>
     <label for="si">Si</label>
 
     <br>
 
-    <input type="radio" id="no" name="opcion" id ="no" value="No" />
+    <input type="radio" onclick="radius()" id="no" name="opcion" id ="no" value="No" />
     <label for="no">No</label>
 
     <br>
@@ -65,7 +67,7 @@
 
     <button id="boton" onclick="send()" type="reset" >Enviar</button>
   </div>
-x
+
 </body>
 <script src="actions.js"></script>
 </html>
