@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ensayo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <label>Nombre
+        <input onblur="main()" name="" id="nombre" placeholder="Nombre">
+    </label>
+
+    <br>
+
+    <label>Apellido
+        <input onblur="apellido()" name="" id="apellido" placeholder="Apellido">
+    </label>
+
+    <br>
+
+    <input type="radio" onclick="radius()" name="opcion" value="Si"/>
+    <label for="si">Si</label>
+
+    <br>
+
+    <input type="radio" id="no" name="opcion" value="No" />
+    <label for="no">No</label>
+
+    <br>
+
+    <label id="labelcheck1">Modalidad 1
+        <input type="checkbox" name="" id="check1">
+    </label>
+
+    <br>
+
+    <label id="labelcheck2">Modalidad 2
+        <input type="checkbox" name="" id="check2">
+    </label>
+
+    <label>Email
+        <input type="email" name="" id="email" placeholder="Email">
+    </label>
+
+    <br>
+
+    <label>Fecha de nacimiento
+        <input type="date" name="" id="fechanac">
+    </label>
+
+    <br>
+
+    <label>Contraseña
+        <input type="password" name="" id="pass1" placeholder="******">
+    </label>
+
+    <br>
+
+    <label>Confirmar contraseña
+        <input type="password" name="" id="pass2" placeholder="******">
+    </label>
+
+    <br>
+
+    <button id="boton">Enviar</button>
+
+  </div>
+
 </body>
+<script src="actions.js"></script>
 </html>
