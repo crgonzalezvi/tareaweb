@@ -27,17 +27,43 @@ function apellido(){
 }
 
 function radius(){
-    var siSeleccion = document.getElementById("si");
-    if(siSeleccion.checked ){
+    if (document.getElementById("si").checked){
         check1.style.display = "block";
         check2.style.display = "block";
         labelcheck1.style.display = "block";
         labelcheck2.style.display = "block";
-    }else{
+        
+    }else if(document.getElementById("no").checked){
         check1.style.display = "none";
         check2.style.display = "none";
         labelcheck1.style.display = "none";
         labelcheck2.style.display = "none";
-
     }
+}
+
+function email(){
+    let email = document.getElementById("email").value;
+    if(!email.includes("@")){
+        alert("Revise el formato del correo")
+    }
+}
+
+function pass(){
+
+    let pass1Elemento = document.getElementById("pass1"); //Elemento
+    let pass2Elemento = document.getElementById("pass2"); //Elemento
+
+    let pass1 = document.getElementById("pass1").value; //valor
+    let pass2 = document.getElementById("pass2").value; //valor
+    if(pass1 == pass2){
+        pass1Elemento.style.border = "2px solid green";
+        pass2Elemento.style.border = "2px solid green";
+    }else{
+        pass1Elemento.style.border = "2px solid red";
+        pass2Elemento.style.border = "2px solid red";
+    }
+}
+
+function send(){
+    alert("Información recolectada exitosamente")
 }
