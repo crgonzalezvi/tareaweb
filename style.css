@@ -1,3 +1,8 @@
+body{
+    background-color: #FFDB6F !important;
+}
+
+
 form input{
     margin: 10px;
 }
